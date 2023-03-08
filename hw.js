@@ -58,6 +58,8 @@ let loadImages = (query) => {
       loadImages("sea");
     }
 
-};
 
+
+    
+};
 
