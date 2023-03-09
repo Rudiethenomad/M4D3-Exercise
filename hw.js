@@ -61,16 +61,23 @@ let loadImages = (query) => {
 
     
 };
-
-
+/*
+document.getElementByClassName("btn.btn-outline-secondary:nth-child(2)")
+.addEventListener("click", photoChange);
 
 function photoChange(){
-//let btn = document.querySelectorAll(".btn.btn-outline-secondary:nth-child(2)");
+ const element = document.getElementByClassName("btn.btn-outline-secondary:nth-child(2)");
+  elem.remove();
 
-const el = document.getElementByClassName("btn.btn-outline-secondary:nth-child(2)");
-el.addEventListener("click", hide, true);
-
-   
-console.log(photoChange);
+  console.log(element);
 }
+*/
+const btn = document.getElementByClassName("btn.btn-outline-secondary:nth-child(2)");
+/*
+const photoChange = () => {
+  remove("photoChange");
+}
+btn.addEventListener("click", photoChange, false);
+*/
 
+btn.onclick = (event) =>  event.currentTarget.closest(".card-body").remove();
