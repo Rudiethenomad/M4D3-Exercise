@@ -59,7 +59,18 @@ let loadImages = (query) => {
     }
 
 
-
     
 };
+
+
+
+function photoChange(){
+//let btn = document.querySelectorAll(".btn.btn-outline-secondary:nth-child(2)");
+
+const el = document.getElementByClassName("btn.btn-outline-secondary:nth-child(2)");
+el.addEventListener("click", hide, true);
+
+   
+console.log(photoChange);
+}
 
