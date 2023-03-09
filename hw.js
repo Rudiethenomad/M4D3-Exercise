@@ -80,4 +80,4 @@ const photoChange = () => {
 btn.addEventListener("click", photoChange, false);
 */
 
-btn.onclick = (event) =>  event.currentTarget.closest(".card-body").remove();
+btn.onclick = (event) =>  event("card").remove();
